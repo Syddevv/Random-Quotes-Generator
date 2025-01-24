@@ -185,11 +185,13 @@ a {
     padding: 3px 6px;
   }
 
+
   #generate-button img {
     width: 35px;
   }
 
   #generate-button {
+    margin-top: 50px;
     padding: 8px;
   }
 }
