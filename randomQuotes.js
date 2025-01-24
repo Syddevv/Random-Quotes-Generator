@@ -9,6 +9,8 @@ const quotes = [
   "Don’t stop when you’re tired. Stop when you’re done.",
   "Wake up with determination. Go to bed with satisfaction.",
   "Do something today that your future self will thank you for.",
+  "ASAAAAR!!",
+  "HAPHART",
 ];
 
 const generateBTN = document.getElementById("generate-button");
