@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  font-family: "Montserrat";
+  margin-top: 70px;
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Anton";
+  letter-spacing: 1.5px;
+  font-size: 5em;
+}
+
+span {
+  color: rgb(243, 194, 88);
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 2.4em;
+  text-align: center;
+}
+
+h2 img {
+  width: 35px;
+}
+
+#container {
+  background-color: rgb(255, 222, 152);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 800px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+#quotes1 {
+  position: absolute;
+  bottom: 245px;
+  left: 10px;
+}
+
+#quotes2 {
+  position: absolute;
+  right: 10px;
+  top: 260px;
+}
+
+#copy-button {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  font-family: "Sour Gummy";
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+#copy-button:hover {
+  background-color: rgb(75, 75, 75);
+}
+
+#socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  font-family: "Sour Gummy";
+  font-weight: bold;
+}
+
+#socials img {
+  width: 25px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: scale ease 0.1s;
+}
+
+#socials img:hover {
+  scale: 1.1;
+}
+
+a {
+  text-decoration: none;
+}
+
+#generate-button img {
+  width: 100px;
+}
+
+#generate-button {
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  position: absolute;
+  padding: 10px;
+  transform: translateY(150%);
+  cursor: pointer;
+  transition: background-color ease 0.15s;
+}
+
+#generate-button:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+#generate-button:active {
+  animation: roll 0.7s ease;
+}
+
+@keyframes roll {
+  from {
+    transform: translateY(150%) rotate(0deg);
+  }
+  to {
+    transform: translateY(150%) rotate(360deg);
+  }
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 380px) {
+  body {
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  h2 img {
+    width: 20px;
+  }
+
+  #container {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  #container {
+    height: 200px;
+    padding: 10px;
+  }
+
+  #quotes1 {
+    font-size: 1.5em;
+    position: absolute;
+    top: 1px;
+    left: 12px;
+  }
+
+  #quotes2 {
+    font-size: 1.5em;
+    position: absolute;
+    top: 140px;
+  }
+
+  #copy-button {
+    font-size: 0.8em;
+    padding: 3px 6px;
+  }
+
+  #generate-button img {
+    width: 35px;
+  }
+
+  #generate-button {
+    padding: 8px;
+  }
+}
